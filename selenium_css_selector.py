@@ -23,4 +23,4 @@ driver.get('https://www.google.com/')
 driver.find_element_by_css_selector('.gLFyf.gsfi').send_keys('네이버')
 driver.find_element_by_css_selector('.gLFyf.gsfi').send_keys(Keys.ENTER)
 
-driver.find_elements_by_css_selector('h3.LC20lb.DKV0Md')[2].click()
+driver.find_elements_by_xpath('h3.LC20lb.DKV0Md')[2].click()
