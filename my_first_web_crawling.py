@@ -1,4 +1,5 @@
 import requests
+# requests 라이브러리를 이용하여 간단히 특정 URL의 HTML 소스코드를 가져올 수 있다.
 from bs4 import BeautifulSoup
 # 특정 웹 사이트의 소스코드를 가져와 자유자재로 파싱(Parsing)하는 작업에 큰 도움을 주는 라이브러리
 
