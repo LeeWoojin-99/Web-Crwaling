@@ -1,5 +1,9 @@
 '''
-웹 크롤링을 이용하여 자동으로 구글에 로그인 하여 메일을 보내도록 하는 프로그램
+네이버에 접속하여 자동으로 검색어를 검색하는 프로그램
+키보드 입력 동작을 ActionChains 모듈의 기능을 이용하여 구현하였다.
+
+웹 사이트의 정보를 추출해서 검색창이 어디있는지 알아내서 그 곳에 입력을 하였기 때문에
+웹 크롤링 프로그램이라고 볼 수 있다.
 '''
 
 from selenium import webdriver
@@ -18,7 +22,7 @@ action = ActionChains(driver)
 
 driver.find_element_by_name('query')
 # 해당 요소에 접근한 후에
-action.send_keys('입력').send_keys(Keys.ENTER).perform()
+action.send_keys('IU').send_keys(Keys.ENTER).perform()
 # 해당 요소에서 해야 할 동작들을 연속적으로 수행할 수 있다.
 # '입력'을 입력한 후에 엔터키를 입력한다.
 # perform() : 쌓여있는 동작들을 수행한다.

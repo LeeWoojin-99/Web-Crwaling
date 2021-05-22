@@ -9,7 +9,7 @@ from selenium import webdriver
 # 크롤링을 수행함에 있어서 매우 효과적인 기능을 제공.
 # 특히 구글 크롬과 같은 웹 브라우저와 연동되어 다양한 디버깅을 할 수 있다.
 from selenium.webdriver.common.keys import Keys
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
 import time
 
 driver = webdriver.Chrome('./chromedriver_win32/chromedriver.exe')
